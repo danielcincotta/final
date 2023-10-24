@@ -1,37 +1,35 @@
-.contenedor{
-  display: flex;
-  justify-content: space-around;
-  
-  align-items: center;
-  
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: gray;
-  
-  
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: gray;
 }
-.image{
+
+.image {
     width: 100px;
     height: auto;
 }
 
-.total{
+.total {
     display: flex;
     justify-content: end;
 }
 
-.totall{
+.totall {
     border: 2px solid black;
-  border-radius: 10px;
-  margin-right: 10px;
-  background-color: gray;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: gray;
 }
 
-.form{
+.form {
     width: 350px;
 }
-input{
+
+input {
     border-radius: 10px;
     width: 90%;
     height: 30px;
@@ -39,7 +37,7 @@ input{
     text-align: center;
 }
 
-.form{
+.form {
     text-align: center;
     width: 100%;
     max-width: 600px;
@@ -50,14 +48,15 @@ input{
     align-items: center;
     border-radius: 10px;
     border: 2px solid gray;
-    
-    
+
+
 }
 
-h3{
+h3 {
     text-align: center;
 }
-.customh2{
+
+.customh2 {
     text-align: center;
     text-transform: uppercase;
     color: red;
