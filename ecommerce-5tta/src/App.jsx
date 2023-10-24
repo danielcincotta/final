@@ -21,11 +21,10 @@ function App() {
           <Route path='/' element={<ItemListContainer/>} />
           <Route path='/categoria/:cid' element={<ItemListContainer/>} />
           <Route path="/carrito" element={<CartContainer/>}/>
-          <Route path='/descripcion/:pid' element={<ItemDetailContainer/>} />
+          <Route path='/detalle/:pid' element={<ItemDetailContainer/>} />
         </Routes>
         </CartContextProvider>
     </BrowserRouter>
   )
 }
-
 export default App

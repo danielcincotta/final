@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useCartContext } from '../../context/CartContext'
 
-export const useContador = ({product}) => {
+export const useCount = ({product}) => {
     const [count, setCount] = useState(0)
-    const {addProduct , cartList} = useCartContext()
+    const {addProduct} = useCartContext()
     const agregar = () => {
         setCount(count + 1)
     }
@@ -15,7 +15,8 @@ export const useContador = ({product}) => {
     const carrito = () => {
         if (count > 0) 
         {  
-            addProduct({...product, quantity: count})         
+            addProduct({...product, quantity: count}) 
+            setCount(0)   
         }
     }
     return { count, agregar, eliminar, carrito }

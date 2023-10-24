@@ -18,6 +18,9 @@ function Navbar() {
             <li className="nav-item">
               <NavLink className="nav-link" to="/categoria/audio">audio</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/categoria/teclado">teclado</NavLink>
+            </li>
           </ul>
           <CartWidget />
         </div>

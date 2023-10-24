@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom"
-import { useContador } from '../hooks/useContador'
+import { useCount } from '../hooks/useContador'
 
 function Contador(product) {
-    const { count, agregar, eliminar, carrito } = useContador(product)
-     
-    return <div className='text-center'>
-        <span className='fs-2 fw-bold'>{count}</span>
-        <button onClick={agregar}>+</button>
-        <button onClick={carrito}>agregar a carrito</button>
-        <button onClick={eliminar}>-</button>
-
-        <Link to="/">Seguí comprando</Link>
-    </div>
+    const { count, agregar, eliminar, carrito } = useCount(product)
+    return (
+        <>
+            <Link to="/">
+                <button className="btn btn-outline-dark btn-lg">Seguir comprando</button>
+            </Link>
+            <div className='text-center'>
+                <div> <span className='fs-2 fw-bold'>{count}</span></div>
+                <button className="btn btn-outline-danger" onClick={eliminar}>-</button>
+                <button className="btn btn-secondary" onClick={carrito}>agregar a carrito</button>
+                <button className="btn btn-outline-success" onClick={agregar}>+</button>
+            </div>
+        </>
+    )
 }
 
 
